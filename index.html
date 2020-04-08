@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="outer">
+        <div class="outer">
+            <h1 class="heading">Image Generator</h1>
+            <button id="bt" onclick="addimage()">Generate</button>
+        </div>
+        <div class="flex" id="f">
+           
+        </div>
+    </div>
+    <script>
+        function addimage()
+        {
+            var node=document.createElement("img");
+            node.src="https://source.unsplash.com/random";
+            //node.setAttribute("alt","Hey");
+            node.alt="Random Image";
+            document.getElementById("f").appendChild(node);
+        }
+    </script>
+</body>
+</html>
